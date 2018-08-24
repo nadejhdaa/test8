@@ -1,10 +1,7 @@
 core/**/*
 vendor/**/*
 sites/**/files/**/*
-libraries/**/*
-sites/**/libraries/**/*
-profiles/**/libraries/**/*
-**/js_test_files/**/*
+sites/default/settings.php
 **/node_modules/**/*
 test.php
 доступы

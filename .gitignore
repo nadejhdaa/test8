@@ -1,5 +1,3 @@
-core/**/*
-vendor/**/*
 sites/**/files/**/*
 sites/default/settings.php
 **/node_modules/**/*

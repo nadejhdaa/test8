@@ -1,0 +1,41 @@
+<?php 
+
+function test_module_schema() {
+  $schema['test_module'] = [
+    'description' => 'Store product data',
+    'fields' => [
+      'pid' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique data ID.',
+      ],
+      'title' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Title.',
+      ],
+      'type' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Type.',
+      ],
+      'price' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0, 
+        'description' => 'Price.',
+      ],
+    ],
+    'primary key' => ['pid'],
+    'indexes' => [
+      'title' => ['title'],
+      'type' => ['type'], 
+    ],
+  ];
+
+  return $schema;
+}

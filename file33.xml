@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Catalog>
+	<Product>
+		<Title>Product 1</Title>
+		<Type>Type1</Type>
+		<Price>1000</Price>
+	</Product>
+	<Product>
+		<Title>Product 2</Title>
+		<Type>9129-4М</Type>
+		<Price>1001</Price>
+	</Product>
+	<Product>
+		<Title>Product 3</Title>
+		<Type>Type2</Type>
+		<Price>-102</Price>
+	</Product>
+	<Product>
+		<Title>Product 4</Title>
+		<Type>Type1</Type>
+		<Price>103</Price>
+	</Product>
+	<Product>
+		<Title>Product 5</Title>
+		<Type>Type1</Type>
+		<Price>104</Price>
+	</Product>
+	<Product>
+		<Title>Product 6</Title>
+		<Type>Type3</Type>
+		<Price>105</Price>
+	</Product>
+	<Product>
+		<Title>Product 7</Title>
+		<Type>Type2</Type>
+		<Price>106</Price>
+	</Product>
+	<Product>
+		<Title>Product 8</Title>
+		<Type>Type1</Type>
+		<Price>107</Price>
+	</Product>
+	<Product>
+		<Title>Product 9</Title>
+		<Type>Type3</Type>
+		<Price>108</Price>
+	</Product>
+	<Product>
+		<Title>Product 10</Title>
+		<Type>Type2</Type>
+		<Price>109</Price>
+	</Product>
+	<Product>
+		<Title>Product 11</Title>
+		<Type>Type1</Type>
+		<Price>100</Price>
+	</Product>
+	<Product>
+		<Title>Product 12</Title>
+		<Type>9129-4М</Type>
+		<Price>109</Price>
+	</Product>
+	<Product>
+		<Title>Product 13</Title>
+		<Type>Type2</Type>
+		<Price>122</Price>
+	</Product>
+	<Product>
+		<Title>Product 14</Title>
+		<Type>Type1</Type>
+		<Price>113</Price>
+	</Product>
+	<Product>
+		<Title>Product 15</Title>
+		<Type>Type1</Type>
+		<Price>154</Price>
+	</Product>
+	<Product>
+		<Title>Product 16</Title>
+		<Type>Type3</Type>
+		<Price>135</Price>
+	</Product>
+	<Product>
+		<Title>Product 17</Title>
+		<Type>Type2</Type>
+		<Price>166</Price>
+	</Product>
+	<Product>
+		<Title>Product 18</Title>
+		<Type>Type1</Type>
+		<Price>177</Price>
+	</Product>
+	<Product>
+		<Title>Product 19</Title>
+		<Type>Type3</Type>
+		<Price>128</Price>
+	</Product>
+	<Product>
+		<Title>Product 20</Title>
+		<Type>Type2</Type>
+		<Price>119</Price>
+	</Product>
+	<Product>
+		<Title>Product 11</Title>
+		<Type>Type1</Type>
+		<Price>1000</Price>
+	</Product>
+	<Product>
+		<Title>Product 2</Title>
+		<Type>9129-4М</Type>
+		<Price>10001</Price>
+	</Product>
+	<Product>
+		<Title>Product 3</Title>
+		<Type>Type2</Type>
+		<Price>-102</Price>
+	</Product>
+	<Product>
+		<Title>Product 4</Title>
+		<Type>Type1</Type>
+		<Price>1003</Price>
+	</Product>
+	<Product>
+		<Title>Product 5</Title>
+		<Type>Type1</Type>
+		<Price>1004</Price>
+	</Product>
+	<Product>
+		<Title>Product 6</Title>
+		<Type>Type3</Type>
+		<Price>1005</Price>
+	</Product>
+	<Product>
+		<Title>Product 7</Title>
+		<Type>Type2</Type>
+		<Price>1006</Price>
+	</Product>
+	<Product>
+		<Title>Product 8</Title>
+		<Type>Type1</Type>
+		<Price>1007</Price>
+	</Product>
+	<Product>
+		<Title>Product 9</Title>
+		<Type>Type3</Type>
+		<Price>1008</Price>
+	</Product>
+	<Product>
+		<Title>Product 110</Title>
+		<Type>Type2</Type>
+		<Price>1009</Price>
+	</Product>
+	<Product>
+		<Title>Product 111</Title>
+		<Type>Type1</Type>
+		<Price>1000</Price>
+	</Product>
+	<Product>
+		<Title>Product 112</Title>
+		<Type>9129-4М</Type>
+		<Price>1009</Price>
+	</Product>
+	<Product>
+		<Title>Product 113</Title>
+		<Type>Type2</Type>
+		<Price>1022</Price>
+	</Product>
+	<Product>
+		<Title>Product 114</Title>
+		<Type>Type1</Type>
+		<Price>1013</Price>
+	</Product>
+	<Product>
+		<Title>Product 115</Title>
+		<Type>Type1</Type>
+		<Price>1054</Price>
+	</Product>
+	<Product>
+		<Title>Product 116</Title>
+		<Type>Type3</Type>
+		<Price>1035</Price>
+	</Product>
+	<Product>
+		<Title>Product 117</Title>
+		<Type>Type2</Type>
+		<Price>1066</Price>
+	</Product>
+	<Product>
+		<Title>Product 118</Title>
+		<Type>Type1</Type>
+		<Price>1077</Price>
+	</Product>
+	<Product>
+		<Title>Product 119</Title>
+		<Type>Type3</Type>
+		<Price>1028</Price>
+	</Product>
+	<Product>
+		<Title>Product 220</Title>
+		<Type>Type2</Type>
+		<Price>1019</Price>
+	</Product>
+	  <Product>
+    <Title>Product t1</Title>
+    <Type>Type1</Type>
+    <Price>3200</Price>
+  </Product>
+  <Product>
+    <Title>Product t2</Title>
+    <Type>9129-4М</Type>
+    <Price>3201</Price>
+  </Product>
+  <Product>
+    <Title>Product t3</Title>
+    <Type>Type2</Type>
+    <Price>-102</Price>
+  </Product>
+  <Product>
+    <Title>Product t4</Title>
+    <Type>Type1</Type>
+    <Price>323</Price>
+  </Product>
+  <Product>
+    <Title>Product t5</Title>
+    <Type>Type1</Type>
+    <Price>324</Price>
+  </Product>
+  <Product>
+    <Title>Product t6</Title>
+    <Type>Type3</Type>
+    <Price>325</Price>
+  </Product>
+  <Product>
+    <Title>Product t7</Title>
+    <Type>Type2</Type>
+    <Price>326</Price>
+  </Product>
+  <Product>
+    <Title>Product t8</Title>
+    <Type>Type1</Type>
+    <Price>327</Price>
+  </Product>
+  <Product>
+    <Title>Product t9</Title>
+    <Type>Type3</Type>
+    <Price>328</Price>
+  </Product>
+  <Product>
+    <Title>Product t10</Title>
+    <Type>Type2</Type>
+    <Price>329</Price>
+  </Product>
+  <Product>
+    <Title>Product t11</Title>
+    <Type>Type1</Type>
+    <Price>320</Price>
+  </Product>
+  <Product>
+    <Title>Product t12</Title>
+    <Type>9129-4М</Type>
+    <Price>329</Price>
+  </Product>
+  <Product>
+    <Title>Product t13</Title>
+    <Type>Type2</Type>
+    <Price>122</Price>
+  </Product>
+  <Product>
+    <Title>Product t14</Title>
+    <Type>Type1</Type>
+    <Price>113</Price>
+  </Product>
+  <Product>
+    <Title>Product t15</Title>
+    <Type>Type1</Type>
+    <Price>154</Price>
+  </Product>
+  <Product>
+    <Title>Product t16</Title>
+    <Type>Type3</Type>
+    <Price>135</Price>
+  </Product>
+  <Product>
+    <Title>Product t17</Title>
+    <Type>Type2</Type>
+    <Price>166</Price>
+  </Product>
+  <Product>
+    <Title>Product t18</Title>
+    <Type>Type1</Type>
+    <Price>177</Price>
+  </Product>
+  <Product>
+    <Title>Product t19</Title>
+    <Type>Type3</Type>
+    <Price>128</Price>
+  </Product>
+  <Product>
+    <Title>Product t20</Title>
+    <Type>Type2</Type>
+    <Price>119</Price>
+  </Product>
+  <Product>
+    <Title>Product t11</Title>
+    <Type>Type1</Type>
+    <Price>3200</Price>
+  </Product>
+  <Product>
+    <Title>Product t2</Title>
+    <Type>9129-4М</Type>
+    <Price>32001</Price>
+  </Product>
+  <Product>
+    <Title>Product t3</Title>
+    <Type>Type2</Type>
+    <Price>-102</Price>
+  </Product>
+  <Product>
+    <Title>Product t4</Title>
+    <Type>Type1</Type>
+    <Price>3203</Price>
+  </Product>
+  <Product>
+    <Title>Product t5</Title>
+    <Type>Type1</Type>
+    <Price>3204</Price>
+  </Product>
+  <Product>
+    <Title>Product t6</Title>
+    <Type>Type3</Type>
+    <Price>3205</Price>
+  </Product>
+  <Product>
+    <Title>Product t7</Title>
+    <Type>Type2</Type>
+    <Price>3206</Price>
+  </Product>
+  <Product>
+    <Title>Product t8</Title>
+    <Type>Type1</Type>
+    <Price>3207</Price>
+  </Product>
+  <Product>
+    <Title>Product t9</Title>
+    <Type>Type3</Type>
+    <Price>3208</Price>
+  </Product>
+  <Product>
+    <Title>Product t110</Title>
+    <Type>Type2</Type>
+    <Price>3209</Price>
+  </Product>
+  <Product>
+    <Title>Product t111</Title>
+    <Type>Type1</Type>
+    <Price>3200</Price>
+  </Product>
+  <Product>
+    <Title>Product t112</Title>
+    <Type>9129-4М</Type>
+    <Price>3209</Price>
+  </Product>
+  <Product>
+    <Title>Product t113</Title>
+    <Type>Type2</Type>
+    <Price>3222</Price>
+  </Product>
+  <Product>
+    <Title>Product t114</Title>
+    <Type>Type1</Type>
+    <Price>3213</Price>
+  </Product>
+  <Product>
+    <Title>Product t115</Title>
+    <Type>Type1</Type>
+    <Price>3254</Price>
+  </Product>
+  <Product>
+    <Title>Product t116</Title>
+    <Type>Type3</Type>
+    <Price>3235</Price>
+  </Product>
+  <Product>
+    <Title>Product t117</Title>
+    <Type>Type2</Type>
+    <Price>3266</Price>
+  </Product>
+  <Product>
+    <Title>Product t118</Title>
+    <Type>Type1</Type>
+    <Price>3277</Price>
+  </Product>
+  <Product>
+    <Title>Product t119</Title>
+    <Type>Type3</Type>
+    <Price>3228</Price>
+  </Product>
+  <Product>
+    <Title>Product t220</Title>
+    <Type>Type2</Type>
+    <Price>3219</Price>
+  </Product>
+</Catalog>

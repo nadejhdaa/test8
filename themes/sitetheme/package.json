@@ -1,0 +1,24 @@
+{
+  "name": "velo8",
+  "version": "1.0.0",
+  "description": "<!-- @file Instructions for subtheming using the Less Starterkit. --> <!-- @defgroup sub_theming_less --> <!-- @ingroup sub_theming --> # Less Starterkit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "author": "nadejhda",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-less": "^3.4.0"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-less": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nadejhdaa/velo8.git"
+  }
+}

@@ -1,0 +1,35 @@
+<?php
+
+  use Drupal\test_module\XMLBatchImport;
+
+  /**
+   * @file
+   * Используем hook_cron().
+   */
+
+function test_module_cron() {
+  // We access our configuration.
+  $config = \Drupal::configFactory()->getEditable('test_module.settings');
+  
+  // Get cron interval
+  $interval = $config->get('interval');
+  $interval = !empty($interval) ? $interval : 300;
+
+  // Check it`s time to next execution of import from xml to db
+  $next_execution = \Drupal::state()->get('test_module.cron_next_execution');
+  $next_execution = !empty($next_execution) ? $next_execution : 0;
+  if (REQUEST_TIME >= $next_execution) {
+    // Import from xml to db
+    $fid = $config->get('fid');
+    $import = new xmlBatchImport($fid);
+    $import->setBatch();
+    // Record in db log that cron test_module task is ran
+    \Drupal::logger('test_module')->notice('cron_test_module ran');
+    if (\Drupal::state()->get('cron_test_module_show_status_message')) {
+      \Drupal::messenger()->addMessage(t('test_module executed at %time', ['%time' => date_iso8601(REQUEST_TIME)]));
+      \Drupal::state()->set('cron_test_module_show_status_message', FALSE);
+    }
+    \Drupal::state()->set('test_module.cron_next_execution', REQUEST_TIME + $interval);
+  }
+}
+

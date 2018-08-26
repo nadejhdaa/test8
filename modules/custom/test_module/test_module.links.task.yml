@@ -1,0 +1,11 @@
+test_module.products:
+  route_name: test_module.products
+  title: Products 
+  base_route: test_module.products
+  weight: 1
+
+test_module.file_upload:
+  route_name: test_module.form
+  title: Upload file
+  base_route: test_module.products
+  weight: 2

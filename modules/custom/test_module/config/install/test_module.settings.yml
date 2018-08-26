@@ -1,0 +1,5 @@
+interval: 300
+fid: false
+filename: 'xml.xml'
+destination: 'public://xml'
+created: false

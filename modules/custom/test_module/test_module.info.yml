@@ -1,0 +1,8 @@
+name: Test XML Module
+type: module
+description: 'Test Module Softline'
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-08-16
+version: '8.x-1.x'
+core: '8.x'

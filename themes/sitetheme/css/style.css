@@ -7574,8 +7574,8 @@ p:last-child,
   margin-top: 0;
 }
 tr.attention {
-  background-color: #ffffc7 !important;
+  background-color: #ffc5c5 !important;
 }
 tr.attention:nth-of-type(odd) {
-  background-color: #ffff94 !important;
+  background-color: #ffb2b2 !important;
 }

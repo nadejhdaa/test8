@@ -7573,3 +7573,9 @@ p:last-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
+tr.attention {
+  background-color: #ffffc7 !important;
+}
+tr.attention:nth-of-type(odd) {
+  background-color: #ffff94 !important;
+}

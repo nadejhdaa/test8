@@ -51,12 +51,15 @@ class UploadForm extends ConfigFormBase {
     # Если загружен файл, отображаем дополнительные элементы формы.
     if (!empty($config->get('fid'))) {
       $file = File::load($config->get('fid'));
-      $created = \Drupal::service('date.formatter')
+      if($file) {
+        $created = \Drupal::service('date.formatter')
         ->format($file->created->value, 'medium');
 
-      $form['file_information'] = [
-        '#markup' => $this->t('This file was uploaded at @created.', ['@created' => $created]),
-      ];
+        $form['file_information'] = [
+          '#markup' => $this->t('This file was uploaded at @created.', ['@created' => $created]),
+        ];
+      }
+      
 
 
       # Add button to start import submit handler.
@@ -107,10 +110,10 @@ class UploadForm extends ConfigFormBase {
       // Else create required dir and load file to it
       $file = File::load($fid_form);  
       if (file_prepare_directory($destination_dir, FILE_CREATE_DIRECTORY)) {
-        $file = file_move($file, $destination_dir . '/' . $new_filename);
+        $file = file_move($file, $destination_dir . '/' . $new_filename, $replace = FILE_EXISTS_RENAME);
       } else { 
         drupal_mkdir($destination_dir);
-        $file = file_move($file, $destination_dir . '/' . $new_filename);
+        $file = file_move($file, $destination_dir . '/' . $new_filename, $replace = FILE_EXISTS_RENAME);
       }
       $file->save();
 
@@ -132,7 +135,7 @@ class UploadForm extends ConfigFormBase {
   public function startImport(array &$form, FormStateInterface $form_state) {
     $config = $this->config('test_module.settings');
     $fid = $config->get('fid');
-    $import = new xmlBatchImport($fid);
+    $import = new XMLBatchImport($fid);
     $import->setBatch();
   }
 }

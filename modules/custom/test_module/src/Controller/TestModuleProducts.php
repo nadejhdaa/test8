@@ -10,7 +10,7 @@ use Drupal\Core\Link;
 use Symfony\Component\DependencyInjection\ContainerInterface;
  
 /**
- * Provides route responses for the Example module.
+ * Provides route responses for the Test module.
  */
 class TestModuleProducts extends ControllerBase {
 
@@ -57,16 +57,22 @@ class TestModuleProducts extends ControllerBase {
  
     // Populate the rows.
     $rows = array();
-    foreach($result as $row) {
+    foreach($result as $key => $row) {
       $class = $row->price >= 0 ? 'ok' : 'attention';
-      $rows[] = array(
+      
+      $rows[$key] = array(
         'data' => array(
           'name' => $row->title,
           'type' => $row->type, 
           'price' => $row->price
         ),
-        'class' => [$class],
+        'class' => $class, 
       );
+      if($row->price < 0) {
+        $rows[$key]['data-toggle'] = 'tooltip';
+        $rows[$key]['title'] = 'Error: price is less than 0';
+        $rows[$key]['data-placement'] = 'top';
+      }  
     }
  
 

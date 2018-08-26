@@ -12,4 +12,4 @@ test_module.form:
     _form: '\Drupal\test_module\Form\UploadForm'
     _title: 'Upload XML-file'
   requirements:
-    _permission: 'access content'
+    _permission: 'access administration pages'

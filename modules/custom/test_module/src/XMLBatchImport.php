@@ -2,6 +2,7 @@
 
 namespace Drupal\test_module;
 
+// We use File functions
 use Drupal\file\Entity\File;
 
 /**
@@ -40,29 +41,38 @@ class XMLBatchImport {
    * parse XML and chunk data to force performance
    */
   public function parseXML() {  
-    if (($handle = fopen($this->file->getFileUri(), 'r')) !== FALSE) {
-      # Clear Db table from old records
+
+    // load XML file
+    $file = File::load($this->fid);
+
+    // if XML file exists
+    if($file) {
+      // Clear DB table from old records before import 
       $query = \Drupal::database()->delete('test_module');
       $query->execute();
-      $xml = simplexml_load_file(drupal_realpath($this->file->getFileUri())); 
+
+      // load xml file and get its data in array
+      $filepath = drupal_realpath($file->getFileUri());
+      $xml = simplexml_load_file($filepath); 
       $json = json_encode($xml);
       $data =  json_decode($json,true);
+
+      // Split array to chunks to lighter performance of batch
       $chunks = array_chunk($data['Product'], 100);
       foreach ($chunks as $chunk) {  
         foreach ($chunk as $row) {
           $this->setOperation($row); 
         } 
       }
-      
-      fclose($handle);
     }
+
   }
 
   /**
    * {@inheritdoc}
    *
-   * Every row is array from data. 
-   * Send row to batch operation
+   * Every row is array from product data (title, type, price). 
+   * Send it to batch operation item
    */
   public function setOperation($row) { 
     $this->batch['operations'][] = [[$this, 'processItem'], $row];
@@ -72,7 +82,7 @@ class XMLBatchImport {
    * {@inheritdoc}
    *
    * Work with row
-   *And wright in $context.
+   * And wright in $context.
    */
   public function processItem($title, $type, $price, &$context) { 
     
@@ -98,7 +108,7 @@ class XMLBatchImport {
   /**
    * {@inheritdoc}
    *
-   * Данный метод на случай, если вызываться будет не из субмита формы.
+   * To call function from module, not from form
    */
   public function processBatch() {
     batch_process();
@@ -107,7 +117,7 @@ class XMLBatchImport {
   /**
    * {@inheritdoc}
    *
-   * Информация по завершнеию выполнения операций.
+   * Information about end of import
    */
   public function finished($success, $results, $operations) {
     if ($success) {
